@@ -11,7 +11,7 @@ class Vatsim
 
 	function clients()
 	{
-		require_once("VatsimPHPfiles/customization.txt");
+		//require_once("VatsimPHPfiles/customization.txt");
 
 		$file=file("http://fsproshop.com/servinfo/vatsim-data.txt");
 		$allowed="no";
