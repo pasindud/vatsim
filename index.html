@@ -1,0 +1,38 @@
+<html>
+	<head>
+	
+	<script>
+	     function fetch_data() {
+			var sr="http://pasindu.us/vatsim/api?format=json&callback=databack&data=pilots";
+             var script = document.createElement('script');
+            script.setAttribute('id', 'jsonScript');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('src', sr);
+            document.documentElement.firstChild.appendChild(script);
+         
+        }
+		
+        window.onload = function () {
+		
+			fetch_data();
+		}
+		function databack(data){
+		
+				console.log(data);
+				document.getElementById("data").innerHTML=data;
+		
+		}
+	</script>
+	</head>
+	<body>
+	<h1>Please Refer the Console for the  output<br>
+ 	The URL is http://pasindu.us/vatsim/api?format=json&callback=databack&data=pilots
+<br>
+Callback call be anything you want<br>
+Only pilots data is available now all fields are there expect planned remarks of the pilot
+<br>
+format can also be XML
+</h1>
+	<div id="data"></div>
+	</body>
+	</html>
