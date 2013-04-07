@@ -1,5 +1,6 @@
 <?php
 /*
+Leave the following copyrights
 @Version V 1.1
 @author Brian Beach (915973) V1.0
 @author Pasindu De Silva (1165770)V 1.1
